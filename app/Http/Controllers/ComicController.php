@@ -59,4 +59,35 @@ class ComicController extends Controller
         ];
         return view('home', compact('menu', 'socials', 'icons', 'cards'));
     }
+
+    public function show($id)
+    {
+        $menu = [
+
+            'Characters',
+            'Comics',
+            'Movies',
+            'TV',
+            'GAMES',
+            'Collectibles',
+            'Videos',
+            'Fans',
+            'News',
+            'Shop'
+        ];
+        $socials = [
+            'facebook' => '../resources/img/footer-facebook.png',
+            'twitter' => '../resources/img/footer-twitter.png',
+            'youtube' => '../resources/img/footer-youtube.png',
+            'pinterest' => '../resources/img/footer-pinterest.png',
+            'periscope' => '../resources/img/footer-periscope.png',
+        ];
+
+        $cards = Comic::find($id);
+        $data = [
+            'comic' => $cards
+        ];
+
+        return view('detail-comics', $data, compact('menu', 'socials'));
+    }
 }

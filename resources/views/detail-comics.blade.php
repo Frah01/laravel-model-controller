@@ -14,20 +14,20 @@
             <div class="col-8">
                 <div class="d-flex justify-content-center align-items-center">  
                     <div class="p-2 ">
-                        <img src="{{$single['thumb']}}" alt="">
+                        <img src="{{$comic['thumb']}}" alt="">
                     </div>
                     <div class="mt-3 mx-2">
-                        <h2 class="p-2 ">{{$single['title']}}</h2>
+                        <h2 class="p-2 ">{{$comic['title']}}</h2>
                         <div class="price-bar d-flex justify-content-between align-items-center p-2 border">
                             <div class="d-flex align-items-center">
                                 <h6 class="p-2">U.S PRICE </h6>
-                                <span class="fw-bold text-white">{{$single['price']}}</span>
+                                <span class="fw-bold text-white">{{$comic['price']}}</span>
                             </div>
                             <div>
                                 <h6 class="mx-3">Available</h6>
                             </div>
                         </div>
-                        <p class="p-2 fw-semibold">{{$single['description']}}</p>
+                        <p class="p-2 fw-semibold">{{$comic['description']}}</p>
                     </div>
                 </div> 
             </div>
@@ -48,9 +48,7 @@
                         <p class="fw-bold">Art by:</p>
                     </div>
                     <div class="col-8 d-flex flex-wrap">
-                        @foreach ($single['artists'] as $artist)
-                        <p>{{$artist}}</a>    
-                        @endforeach
+                        <p>{{$comic['artists']}}</a>    
                     </div>
                 </div>
                 <hr>
@@ -59,9 +57,7 @@
                         <p class="fw-bold">Written by:</p>
                     </div>
                     <div class="col-8 d-flex flex-wrap">
-                        @foreach ($single['writers'] as $writer)
-                        <p>{{$writer}}</p>    
-                        @endforeach
+                        <p>{{$comic['writers']}}</p>   
                     </div>
                 </div>
                
@@ -77,7 +73,7 @@
                         <p >Series:</p>
                     </div>
                     <div class="col-8">
-                        <a class="thumb-color"  href="">{{$single['series']}}</a>
+                        <a class="thumb-color"  href="">{{$comic['series']}}</a>
                     </div>
                 </div>
                 <hr>
@@ -86,7 +82,7 @@
                         <p >U.S Price:</p>
                     </div>
                     <div class="col-8">
-                        <p>{{$single['price']}}</a>
+                        <p>{{$comic['price']}}</a>
                     </div>
                 </div>
                 <hr>
@@ -95,7 +91,7 @@
                         <p >On Sale Date:</p>
                     </div>
                     <div class="col-8">
-                        <p>{{$single['sale_date']}}</a>
+                        <p>{{$comic['sale_date']}}</a>
                     </div>
                 </div>
                 <hr>
