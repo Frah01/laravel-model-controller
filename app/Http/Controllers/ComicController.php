@@ -60,7 +60,7 @@ class ComicController extends Controller
         return view('home', compact('menu', 'socials', 'icons', 'cards'));
     }
 
-    public function show($id)
+    public function show($slug)
     {
         $menu = [
 
@@ -83,7 +83,8 @@ class ComicController extends Controller
             'periscope' => '../resources/img/footer-periscope.png',
         ];
 
-        $cards = Comic::find($id);
+        $cards = Comic::where('slug', $slug)->get();
+        $cards = $cards[0];
         $data = [
             'comic' => $cards
         ];
