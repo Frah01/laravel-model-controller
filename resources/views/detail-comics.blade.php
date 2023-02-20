@@ -9,13 +9,20 @@
 <body>
     @include('partials.header')
     @include('partials.jumbotron')
-    <div class="container">
+    <div class="container-fluid blue-bar position-relative">
+        <div class="p-2 position-absolute">
+            <div>
+                <img class="thumbnail" src="{{$comic['thumb']}}" alt="">
+            </div>
+            <div>
+                
+            </div>
+        </div>
+    </div>
+    <div class="container ">
         <div class="row" >
             <div class="col-8">
                 <div class="d-flex justify-content-center align-items-center">  
-                    <div class="p-2 ">
-                        <img src="{{$comic['thumb']}}" alt="">
-                    </div>
                     <div class="mt-3 mx-2">
                         <h2 class="p-2 ">{{$comic['title']}}</h2>
                         <div class="price-bar d-flex justify-content-between align-items-center p-2 border">

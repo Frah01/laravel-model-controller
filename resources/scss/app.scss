@@ -189,3 +189,25 @@ footer {
     border-bottom: 1px solid rgba(0, 0, 0, 0.5);
 
 }
+
+
+.position-relative {
+    position: relative
+}
+
+
+.position-absolute {
+    position: absolute;
+    top: -250px;
+    left: 320px;
+
+}
+
+.blue-bar {
+    padding: 30px;
+    background-color: rgba(2, 130, 249, 255);
+}
+
+.thumbnail {
+    border: 1px solid white;
+}
