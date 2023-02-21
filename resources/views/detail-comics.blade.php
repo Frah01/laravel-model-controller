@@ -15,7 +15,6 @@
                 <img class="thumbnail" src="{{$comic['thumb']}}" alt="">
             </div>
             <div>
-                
             </div>
         </div>
     </div>

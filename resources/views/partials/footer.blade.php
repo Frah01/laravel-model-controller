@@ -10,6 +10,7 @@
 <body>
 <footer class="footer-background">
     <div class="container " >
+      <div class="d-flex">
         <div class="col-50" >
           <ul class="list p-0 fw-semibold">
             <li>
@@ -107,9 +108,10 @@
         </div>
         <div class="col-50-dx">
           <div class="" >
-      
+            <img class="img-fluid" src="{{Vite::asset('../../resources/img/dc-logo-bg.png')}}" alt="">
           </div>
         </div>
+      </div>
     </div>
 </div>
 </footer>
