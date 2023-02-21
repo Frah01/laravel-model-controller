@@ -18,12 +18,12 @@
             </div>
         </div>
     </div>
-    <div class="container ">
+    <div class="container back-grey">
         <div class="row" >
             <div class="col-8">
                 <div class="d-flex justify-content-center align-items-center">  
                     <div class="mt-3 mx-2">
-                        <h2 class="p-2 ">{{$comic['title']}}</h2>
+                        <h2 class="p-2 text-uppercase title-comic">{{$comic['title']}}</h2>
                         <div class="price-bar d-flex justify-content-between align-items-center p-2 border">
                             <div class="d-flex align-items-center">
                                 <h6 class="p-2">U.S PRICE </h6>
@@ -38,7 +38,7 @@
                 </div> 
             </div>
             <div class="col-4">
-                <div class="d-flex justify-content-center align-items-center h-100">
+                <div class="mt-5">
                     <img class="img-adv" src="{{Vite::asset('../resources/img/adv.jpg')}}" alt="">
                 </div>
             </div>
@@ -101,6 +101,34 @@
                     </div>
                 </div>
                 <hr>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row pt-3">
+            <div class="col-3 border">
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="text-uppercase fw-semibold color-grey">Digital Comics</p>
+                    <img class="merch-icons color-grey" src="{{Vite::asset('../resources/img/buy-comics-subscriptions.png')}}" alt="">
+                </div>
+            </div>
+            <div class="col-3 border">
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="text-uppercase fw-semibold color-grey">Shop DC</p>
+                    <img class="merch-icons color-grey" src="{{Vite::asset('../resources/img/buy-comics-digital-comics.png')}}" alt="">
+                </div>
+            </div>
+            <div class="col-3 border">
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="text-uppercase fw-semibold color-grey">Comic Shop Locator</p>
+                    <img class="merch-icons color-grey" src="{{Vite::asset('../resources/img/buy-comics-shop-locator.png')}}" alt="">
+                </div>
+            </div>
+            <div class="col-3 border">
+                <div class="d-flex justify-content-between mt-2">
+                    <p class="text-uppercase fw-semibold color-grey">Subscriptions</p>
+                    <img class="merch-icons color-grey" src="{{Vite::asset('../resources/img/buy-comics-merchandise.png')}}" alt="">
+                </div>
             </div>
         </div>
     </div>

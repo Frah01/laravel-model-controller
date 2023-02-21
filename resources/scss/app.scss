@@ -6,6 +6,10 @@
     box-sizing: border-box;
 }
 
+body {
+    background-color: rgb(235, 233, 233);
+}
+
 .thumbs {
     height: 200px;
     object-fit: cover;
@@ -142,7 +146,9 @@ footer {
     }
 }
 
-
+.title-comic {
+    color: rgba(5, 123, 215, 255);
+}
 
 .search-box {
     width: fit-content;
@@ -207,4 +213,13 @@ footer {
 
 .thumbnail {
     border: 1px solid white;
+    box-shadow: 1px 1px 5px black;
+}
+
+.color-grey {
+    filter: invert(25%);
+}
+
+.back-grey {
+    background-color: rgb(235, 233, 233)
 }
